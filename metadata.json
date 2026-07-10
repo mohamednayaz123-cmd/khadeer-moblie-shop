@@ -1,0 +1,6 @@
+{
+  "name": "Mobile Care Center",
+  "description": "Premium responsive website for a mobile repair and digital banking services shop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
