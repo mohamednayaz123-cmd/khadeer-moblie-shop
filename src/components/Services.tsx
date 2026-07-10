@@ -5,18 +5,38 @@ import {
   Shield, Headphones, CreditCard, Send, Wallet, 
   FileText, ShieldCheck, Banknote, PenTool, CheckCircle, SmartphoneNfc
 } from 'lucide-react';
+import displayImg from '../assets/images/screen_protector_1783667798110.jpg';
+import chargingPortImg from '../assets/images/charging_port_macro_1783668153502.jpg';
+import speakerImg from '../assets/images/speaker_cleaning_tools_1783668338312.jpg';
+import androidUpdateImg from '../assets/images/android_software_update_1783668622227.jpg';
 
 const services = [
-  { name: 'Mobile Display Replacement', icon: Smartphone },
+  { 
+    name: 'Mobile Display Replacement', 
+    icon: Smartphone,
+    image: displayImg
+  },
   { name: 'Touch Screen Repair', icon: PenTool },
   { name: 'Battery Replacement', icon: Battery },
-  { name: 'Charging Port Repair', icon: Zap },
-  { name: 'Speaker Repair', icon: Volume2 },
+  { 
+    name: 'Charging Port Repair', 
+    icon: Zap,
+    image: chargingPortImg 
+  },
+  { 
+    name: 'Speaker Repair', 
+    icon: Volume2,
+    image: speakerImg
+  },
   { name: 'Microphone Repair', icon: Mic },
   { name: 'Camera Repair', icon: Camera },
   { name: 'Water Damage Repair', icon: Droplets },
   { name: 'Software Installation', icon: Download },
-  { name: 'Android Software Update', icon: RefreshCw },
+  { 
+    name: 'Android Software Update', 
+    icon: RefreshCw,
+    image: androidUpdateImg
+  },
   { name: 'Mobile Unlocking', icon: Unlock },
   { name: 'Data Backup & Recovery', icon: Database },
   { name: 'Tempered Glass Installation', icon: Shield },
@@ -65,8 +85,12 @@ export default function Services() {
               transition={{ delay: index * 0.05 }}
               className="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col items-center text-center transition-all hover:shadow-md hover:border-brand-orange-500/50 group"
             >
-              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-3 text-brand-blue-800 group-hover:bg-brand-orange-500 group-hover:text-white transition-colors">
-                <service.icon className="w-5 h-5" />
+              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-3 text-brand-blue-800 group-hover:bg-brand-orange-500 group-hover:text-white transition-colors overflow-hidden">
+                {service.image ? (
+                  <img src={service.image} alt={service.name} className="w-full h-full object-cover" />
+                ) : (
+                  <service.icon className="w-5 h-5" />
+                )}
               </div>
               <h3 className="text-[13px] font-bold text-brand-blue-900 leading-tight uppercase tracking-wide">
                 {service.name}

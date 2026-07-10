@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import AboutUs from './components/AboutUs';
 import WhyChooseUs from './components/WhyChooseUs';
+import Gallery from './components/Gallery';
 import Reviews from './components/Reviews';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
@@ -23,6 +24,7 @@ export default function App() {
         <Services />
         <AboutUs />
         <WhyChooseUs />
+        <Gallery />
         <Reviews />
         <FAQ />
         <Contact />

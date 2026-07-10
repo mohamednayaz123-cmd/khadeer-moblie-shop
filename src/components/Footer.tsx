@@ -58,10 +58,6 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-brand-orange-500 mr-3 flex-shrink-0" />
                 <a href="tel:+918553177718" className="text-slate-400 hover:text-brand-orange-500 transition-colors">+91 85531 77718</a>
               </li>
-              <li className="flex items-center">
-                <Mail className="w-5 h-5 text-brand-orange-500 mr-3 flex-shrink-0" />
-                <a href="mailto:support@mobilecarecenter.com" className="text-slate-400 hover:text-brand-orange-500 transition-colors">support@mobilecarecenter.com</a>
-              </li>
             </ul>
           </div>
 
