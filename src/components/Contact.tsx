@@ -50,15 +50,11 @@ export default function Contact() {
                 <div className="mt-6 pt-6 border-t border-white/10 space-y-3 text-sm">
                   <div className="flex items-center gap-3">
                     <MapPin className="w-4 h-4 text-brand-orange-500 flex-shrink-0" />
-                    <span className="text-slate-300">123 Repair Street, Tech Hub Area, CityName</span>
+                    <span className="text-slate-300">123 Repair Street, Tech Hub Area, Mysuru, Karnataka</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="w-4 h-4 text-brand-orange-500 flex-shrink-0" />
                     <a href="tel:+918553177718" className="text-slate-300 hover:text-white transition-colors">+91 85531 77718</a>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="w-4 h-4 text-brand-orange-500 flex-shrink-0" />
-                    <a href="mailto:support@mobilecarecenter.com" className="text-slate-300 hover:text-white transition-colors">support@mobilecarecenter.com</a>
                   </div>
                 </div>
               </div>
@@ -86,7 +82,7 @@ export default function Contact() {
           >
             <div className="h-full min-h-[400px] w-full bg-slate-200 rounded-xl overflow-hidden shadow-sm border border-slate-100">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-122.084!3d37.422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDI1JzE5LjIiTiAxMjLCsDA1JzAyLjQiVw!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                src="https://maps.google.com/maps?q=12.3320868,76.692492&hl=en&z=17&output=embed" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

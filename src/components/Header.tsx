@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Smartphone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
+import logoImg from '../assets/images/mobile_care_logo_1783777392850.jpg';
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,13 +35,16 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2 group">
-            <div className="bg-brand-orange-500 p-2 rounded-lg group-hover:bg-brand-orange-600 transition-colors">
-              <Smartphone className="w-6 h-6 text-white" />
+          <a href="#home" className="flex items-center space-x-3 group">
+            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 bg-white shadow-sm flex-shrink-0 group-hover:border-white transition-colors">
+              <img src={logoImg} alt="Mobile Care Logo" className="w-full h-full object-contain p-1" />
             </div>
-            <span className="text-2xl font-heading font-bold text-white tracking-tight">
-              Mobile <span className="text-brand-orange-500">Care</span>
-            </span>
+            <div className="flex flex-col">
+              <span className="text-xl font-heading font-bold text-white tracking-tight leading-none">
+                MOBILE <span className="text-blue-400">CARE</span>
+              </span>
+              <span className="text-[10px] font-medium text-slate-300 uppercase tracking-wider mt-1">Mobile Repair & Service</span>
+            </div>
           </a>
 
           {/* Desktop Nav */}

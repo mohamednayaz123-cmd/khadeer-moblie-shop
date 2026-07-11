@@ -49,6 +49,9 @@ const services = [
   { name: 'Balance Enquiry', icon: Wallet },
   { name: 'Aadhaar Enabled Banking', icon: ShieldCheck },
   { name: 'Mobile Banking Assistance', icon: CreditCard },
+  { name: 'Jio Payment Bank', icon: CreditCard },
+  { name: 'Airtel Payment Bank', icon: CreditCard },
+  { name: 'Fino Payment Bank', icon: CreditCard },
 ];
 
 export default function Services() {
