@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-brand-orange-500 mr-3 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-400">123 Repair Street, Tech Hub Area, Mysuru, Karnataka</span>
+                <span className="text-slate-400"># 11 Mahdevpura Road Sathgali Extensions 1st Stage Mysore</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-brand-orange-500 mr-3 flex-shrink-0" />

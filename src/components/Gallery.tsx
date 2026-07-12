@@ -11,10 +11,6 @@ const images = [
     alt: 'Mobile Repair',
   },
   {
-    src: 'https://images.unsplash.com/photo-1512418490979-9ce792d03922?q=80&w=800&auto=format&fit=crop',
-    alt: 'Screen Replacement',
-  },
-  {
     src: 'https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=800&auto=format&fit=crop',
     alt: 'Mobile Accessories',
   },

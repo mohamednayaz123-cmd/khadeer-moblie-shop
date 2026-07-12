@@ -3,7 +3,7 @@ import {
   Smartphone, Battery, Zap, Volume2, Mic, Camera, 
   Droplets, Download, RefreshCw, Unlock, Database, 
   Shield, Headphones, CreditCard, Send, Wallet, 
-  FileText, ShieldCheck, Banknote, PenTool, CheckCircle, SmartphoneNfc
+  FileText, ShieldCheck, Banknote, PenTool, CheckCircle, SmartphoneNfc, Wifi, Truck
 } from 'lucide-react';
 import displayImg from '../assets/images/screen_protector_1783667798110.jpg';
 import chargingPortImg from '../assets/images/charging_port_macro_1783668153502.jpg';
@@ -37,8 +37,6 @@ const services = [
     icon: RefreshCw,
     image: androidUpdateImg
   },
-  { name: 'Mobile Unlocking', icon: Unlock },
-  { name: 'Data Backup & Recovery', icon: Database },
   { name: 'Tempered Glass Installation', icon: Shield },
   { name: 'Mobile Cover & Accessories', icon: Headphones },
   { name: 'SIM Activation Assistance', icon: SmartphoneNfc },
@@ -52,6 +50,9 @@ const services = [
   { name: 'Jio Payment Bank', icon: CreditCard },
   { name: 'Airtel Payment Bank', icon: CreditCard },
   { name: 'Fino Payment Bank', icon: CreditCard },
+  { name: 'Porting Services or MNP Service', icon: RefreshCw },
+  { name: 'Airtel Dish TV, Wifi Installation, Jio Fiber Installation, Broadband Service', icon: Wifi },
+  { name: 'Home Delivery Service', icon: Truck },
 ];
 
 export default function Services() {

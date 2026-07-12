@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Smartphone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-import logoImg from '../assets/images/mobile_care_logo_1783777392850.jpg';
+import logoImg from '../assets/images/mobile_care_plus_logo_1783822444739.jpg';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,7 +41,7 @@ export default function Header() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-heading font-bold text-white tracking-tight leading-none">
-                MOBILE <span className="text-blue-400">CARE</span>
+                MOBILE <span className="text-blue-400">CARE +</span>
               </span>
               <span className="text-[10px] font-medium text-slate-300 uppercase tracking-wider mt-1">Mobile Repair & Service</span>
             </div>

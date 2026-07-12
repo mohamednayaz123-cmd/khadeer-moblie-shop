@@ -50,7 +50,7 @@ export default function Contact() {
                 <div className="mt-6 pt-6 border-t border-white/10 space-y-3 text-sm">
                   <div className="flex items-center gap-3">
                     <MapPin className="w-4 h-4 text-brand-orange-500 flex-shrink-0" />
-                    <span className="text-slate-300">123 Repair Street, Tech Hub Area, Mysuru, Karnataka</span>
+                    <span className="text-slate-300"># 11 Mahdevpura Road Sathgali Extensions 1st Stage Mysore</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="w-4 h-4 text-brand-orange-500 flex-shrink-0" />
