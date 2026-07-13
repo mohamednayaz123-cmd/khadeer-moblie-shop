@@ -11,32 +11,6 @@ import speakerImg from '../assets/images/speaker_cleaning_tools_1783668338312.jp
 import androidUpdateImg from '../assets/images/android_software_update_1783668622227.jpg';
 
 const services = [
-  { 
-    name: 'Mobile Display Replacement', 
-    icon: Smartphone,
-    image: displayImg
-  },
-  { name: 'Touch Screen Repair', icon: PenTool },
-  { name: 'Battery Replacement', icon: Battery },
-  { 
-    name: 'Charging Port Repair', 
-    icon: Zap,
-    image: chargingPortImg 
-  },
-  { 
-    name: 'Speaker Repair', 
-    icon: Volume2,
-    image: speakerImg
-  },
-  { name: 'Microphone Repair', icon: Mic },
-  { name: 'Camera Repair', icon: Camera },
-  { name: 'Water Damage Repair', icon: Droplets },
-  { name: 'Software Installation', icon: Download },
-  { 
-    name: 'Android Software Update', 
-    icon: RefreshCw,
-    image: androidUpdateImg
-  },
   { name: 'Tempered Glass Installation', icon: Shield },
   { name: 'Mobile Cover & Accessories', icon: Headphones },
   { name: 'SIM Activation Assistance', icon: SmartphoneNfc },
@@ -53,6 +27,7 @@ const services = [
   { name: 'Porting Services or MNP Service', icon: RefreshCw },
   { name: 'Airtel Dish TV, Wifi Installation, Jio Fiber Installation, Broadband Service', icon: Wifi },
   { name: 'Home Delivery Service', icon: Truck },
+  { name: 'CC TV Installation and Service', icon: Camera },
 ];
 
 export default function Services() {
@@ -90,11 +65,7 @@ export default function Services() {
               className="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col items-center text-center transition-all hover:shadow-md hover:border-brand-orange-500/50 group"
             >
               <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-3 text-brand-blue-800 group-hover:bg-brand-orange-500 group-hover:text-white transition-colors overflow-hidden">
-                {service.image ? (
-                  <img src={service.image} alt={service.name} className="w-full h-full object-cover" />
-                ) : (
-                  <service.icon className="w-5 h-5" />
-                )}
+                <service.icon className="w-5 h-5" />
               </div>
               <h3 className="text-[13px] font-bold text-brand-blue-900 leading-tight uppercase tracking-wide">
                 {service.name}
