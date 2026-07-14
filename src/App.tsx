@@ -17,7 +17,7 @@ import FloatingButtons from './components/FloatingButtons';
 
 export default function App() {
   return (
-    <div className="font-sans text-slate-900 selection:bg-brand-orange-500 selection:text-white overflow-x-hidden">
+    <div className="font-sans text-slate-900 selection:bg-brand-orange-500 selection:text-white">
       <Header />
       <main>
         <Hero />

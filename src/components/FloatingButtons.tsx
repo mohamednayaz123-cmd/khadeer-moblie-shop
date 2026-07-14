@@ -26,7 +26,7 @@ export default function FloatingButtons() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-4 pointer-events-none">
       <AnimatePresence>
         {isVisible && (
           <motion.button
@@ -34,7 +34,7 @@ export default function FloatingButtons() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.5, y: 20 }}
             onClick={scrollToTop}
-            className="w-12 h-12 bg-slate-800 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-slate-700 transition-colors focus:outline-none"
+            className="w-12 h-12 bg-slate-800 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-slate-700 transition-colors focus:outline-none pointer-events-auto cursor-pointer"
             aria-label="Back to top"
           >
             <ArrowUp className="w-6 h-6" />
@@ -46,7 +46,7 @@ export default function FloatingButtons() {
         href="https://wa.me/918553177718"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#20bd5a] transition-all hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300"
+        className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#20bd5a] transition-all hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300 pointer-events-auto cursor-pointer"
         aria-label="Contact on WhatsApp"
       >
         <MessageCircle className="w-8 h-8" />

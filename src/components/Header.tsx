@@ -68,7 +68,8 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-slate-300 hover:text-white focus:outline-none"
+            type="button"
+            className="md:hidden text-slate-300 hover:text-white focus:outline-none p-3 -mr-3 relative z-50 cursor-pointer"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -80,12 +81,13 @@ export default function Header() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-brand-blue-800 border-t border-brand-blue-700"
+            key="mobile-menu"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden absolute top-full left-0 right-0 bg-brand-blue-800 border-t border-brand-blue-700 shadow-xl z-40"
           >
-            <div className="px-4 pt-2 pb-6 space-y-1">
+            <div className="px-4 pt-2 pb-6 space-y-1 max-h-[80vh] overflow-y-auto">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -98,7 +100,8 @@ export default function Header() {
               ))}
               <a
                 href="tel:+918553177718"
-                className="block mt-4 w-full text-center px-5 py-3 bg-brand-orange-500 text-white font-medium rounded-lg hover:bg-brand-orange-600 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block mt-4 w-full text-center px-5 py-3 bg-brand-orange-500 text-white font-bold rounded-lg hover:bg-brand-orange-600 transition-colors"
               >
                 Call Now
               </a>

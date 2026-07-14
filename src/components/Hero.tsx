@@ -25,7 +25,7 @@ export default function Hero() {
             <span className="inline-block bg-brand-orange-500 text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded mb-4 tracking-widest uppercase shadow-sm">
               #1 Mobile Repair Shop in Town
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight mb-6 text-balance">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight mb-6 text-balance">
               Fast & Trusted <br />
               <span className="text-brand-orange-500">Mobile Repair</span> Services
             </h1>
@@ -76,7 +76,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="mt-16 grid grid-cols-3 gap-6 pt-8 border-t border-white/10"
+            className="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 border-t border-white/10"
           >
             <div>
               <p className="text-3xl font-heading font-bold text-white mb-1">5k+</p>
