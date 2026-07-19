@@ -43,10 +43,13 @@ export default function AboutUs() {
             viewport={{ once: true }}
             className="w-full lg:w-1/2"
           >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-blue-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-blue-900 mb-4">
+              About <span className="text-brand-orange-500">Us</span>
+            </h2>
+            <h3 className="text-xl md:text-2xl font-heading font-bold text-slate-800 mb-6">
               Your Trusted Partner for <br />
               <span className="text-brand-orange-500">Mobile Care & Digital Banking</span>
-            </h2>
+            </h3>
             
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
               At Mobile Care Center, we understand how essential your smartphone is to your daily life. That's why our dedicated team of experienced technicians is committed to providing reliable, fast, and professional mobile repair services.
